@@ -74,7 +74,7 @@ if (contactForm) {
     const mensagem = document.getElementById('mensagem').value.trim();
 
     const text = [
-      'Ola! Vim pelo site e gostaria de uma consulta.',
+      'Olá, vim pelo site. Gostaria de tirar uma dúvida.',
       `*Nome:* ${nome}`,
       telefone ? `*Telefone:* ${telefone}` : '',
       area ? `*Area de interesse:* ${area}` : '',
