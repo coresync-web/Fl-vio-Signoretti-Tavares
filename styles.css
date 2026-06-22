@@ -1011,20 +1011,25 @@ a.contact-card:hover {
 
 /* ---- ANIMATIONS ---- */
 [data-animate] {
-  opacity: 0;
-  transform: translateY(32px);
+  opacity: 1;
+  transform: none;
   transition: opacity 0.65s ease, transform 0.65s ease;
 }
 
-[data-animate="fade-left"] {
+.animations-ready [data-animate] {
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+.animations-ready [data-animate="fade-left"] {
   transform: translateX(48px);
 }
 
-[data-animate="fade-right"] {
+.animations-ready [data-animate="fade-right"] {
   transform: translateX(-48px);
 }
 
-[data-animate].visible {
+.animations-ready [data-animate].visible {
   opacity: 1;
   transform: none;
 }
